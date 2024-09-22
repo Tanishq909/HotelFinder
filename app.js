@@ -97,7 +97,10 @@ app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
 app.use("/",userRouter);
 
-
+// Home page
+app.get("/", (req, res) => {
+    res.render("listings/home.ejs");
+});
 // Home page
 app.get("/home", (req, res) => {
     res.render("listings/home.ejs");
