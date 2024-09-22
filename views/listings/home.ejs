@@ -1,0 +1,180 @@
+<% layout("/layouts/boilerplate") %>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+  <!-- carousel Section -->
+  <section id="home" class="p-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="../img/slider/slider2.webp" class="img-fluid d-block w-100" alt="Luxury Stay" style="height: 600px; object-fit: cover;">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center animate__animated animate__fadeInUp">
+            <h5>Luxury Stay</h5>
+            <p>Experience the ultimate relaxation with our premium suites.</p>
+            <a href="/listings" class="btn btn-primary mt-3">Explore More</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="../img/gallery/5.webp" class="img-fluid d-block w-100" alt="Exclusive Deals" style="height: 600px; object-fit: cover;">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center animate__animated animate__fadeInUp">
+            <h5>Exclusive Deals</h5>
+            <p>Book now and enjoy up to 30% off on your stay.</p>
+            <a href="/book" class="btn btn-primary mt-3">Book Now</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="../img/gallery/6.webp" class="img-fluid d-block w-100" alt="World-Class Facilities" style="height: 600px; object-fit: cover;">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center animate__animated animate__fadeInUp">
+            <h5>World-Class Facilities</h5>
+            <p>Enjoy state-of-the-art amenities during your stay.</p>
+            <a href="/listings" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Booking form -->
+    <div class="container booking-area col-11 mt-3">
+      <form class="row g-2">
+        <div class="col-lg mb-3 mb-lg-0">
+          <input type="date" class="form-control" placeholder="Check-in Date">
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <input type="date" class="form-control" placeholder="Check-out Date">
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <select class="form-select">
+            <option selected>Adults</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <select class="form-select">
+            <option selected>Children</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <button type="submit" class="btn btn-primary rounded-2 px-lg-3">Check Availability</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about_wrapper mt-3 pt-4">
+    <div class="container">
+      <div class="row flex-lg-row flex-column-reverse">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h3 class="section-title">Welcome to <span class="main-title">Comfort<br>the haven of your weekend</span></h3>
+          <p class="text-muted">Discover an oasis of peace and relaxation, where luxury meets comfort. Escape the ordinary and indulge in a stay that promises unforgettable experiences.</p>
+          <a href="/listings" class="btn btn-dark mt-4 animate__animated animate__fadeInLeft">Explore Now</a>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+          <img src="../img/about-img.svg" class="img-fluid animate__animated animate__fadeInRight" alt="about">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="room_wrapper mt-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 text-center mb-5">
+          <h6>Our Offerings</h6>
+          <h3 class="section-title">Our Premium Rooms</h3>
+        </div>
+      </div>
+      <div class="row m-0" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-4 mb-4">
+          <div class="room-item position-relative">
+            <img src="../img/room/room1.webp" class="img-fluid rounded" alt="room1">
+            <div class="room-item-overlay" style="background: rgba(0, 0, 0, 0.6); padding: 20px;">
+              <h5 class="text-white">Royal Suite</h5>
+              <p class="text-white">Luxurious stay with all modern amenities.</p>
+              <p class="text-white fw-bold">&#8377;1200/night</p>
+              <a href="/book" class="btn btn-warning">Book now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="room-item position-relative">
+            <img src="../img/room/room2.webp" class="img-fluid rounded" alt="room2">
+            <div class="room-item-overlay" style="background: rgba(0, 0, 0, 0.6); padding: 20px;">
+              <h5 class="text-white">Deluxe Suite</h5>
+              <p class="text-white">Elegant interiors for a perfect getaway.</p>
+              <p class="text-white fw-bold">&#8377;1500/night</p>
+              <a href="/book" class="btn btn-warning">Book now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="room-item position-relative">
+            <img src="../img/room/room3.webp" class="img-fluid rounded" alt="room3">
+            <div class="room-item-overlay" style="background: rgba(0, 0, 0, 0.6); padding: 20px;">
+              <h5 class="text-white">Presidential Suite</h5>
+              <p class="text-white">The ultimate in luxury and sophistication.</p>
+              <p class="text-white fw-bold">&#8377;2500/night</p>
+              <a href="/book" class="btn btn-warning">Book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials Section -->
+  <div id="testimonials" class="testimonials py-5">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <h3 class="section-title">Guest Testimonials</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial-card text-center">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="guest1" class="rounded-circle mb-3" width="80" height="80">
+            <h5>Emily R.</h5>
+            <p>"The best vacation experience I've ever had! The service and the rooms are top-notch. Highly recommended!"</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card text-center">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="guest2" class="rounded-circle mb-3" width="80" height="80">
+            <h5>James P.</h5>
+            <p>"A perfect weekend getaway! The rooms are luxurious and the staff is extremely courteous."</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card text-center">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="guest3" class="rounded-circle mb-3" width="80" height="80">
+            <h5>Sarah W.</h5>
+            <p>"The best resort I've stayed at. The rooms, the facilities, everything was perfect. Will come back for sure!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
